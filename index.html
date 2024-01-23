@@ -14,8 +14,72 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!--! Custom TailwindCSS  -->
-
+    <!--! Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body></body>
+  <body>
+    <!--! Header Section  -->
+    <header class="max-w-screen-lg my-5 mr-2  lg:mx-auto">
+      <div class="navbar bg-base-100 ">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li class="color-primary"><a>Home</a></li>
+              <li>
+                <a>About</a>
+              </li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            </ul>
+            
+          </div>
+          <a class="text-3xl font-bold"
+            >Hockey<span class="color-primary">'</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex justify-between">
+          <ul class="menu menu-horizontal px-1">
+            <li class="color-primary"><a>Home</a></li>
+            <li>
+              <a>About</a>
+            </li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <p class="hidden lg:flex"><i class="fa-solid fa-magnifying-glass text-[#89898B] mr-4"></i></p>
+          <a class="btn bg-[#FF4240] text-[#FFFFFF] font-bold">Get Ticket</a>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
