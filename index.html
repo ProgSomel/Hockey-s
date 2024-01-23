@@ -25,8 +25,9 @@
   </head>
   <body>
     <!--! Header Section  -->
-    <header class="max-w-screen-lg my-5 mr-2  lg:mx-auto">
-      <div class="navbar bg-base-100 ">
+    <header class="">
+      <!--! Navbar Section  -->
+      <div class="navbar  bg-base-100 max-w-screen-lg mt-5 px-2 md:px-4 lg:px-8 mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -58,14 +59,13 @@
               <li><a>Contact</a></li>
               <li><i class="fa-solid fa-magnifying-glass"></i></li>
             </ul>
-            
           </div>
           <a class="text-3xl font-bold"
             >Hockey<span class="color-primary">'</span>s</a
           >
         </div>
-        <div class="navbar-center hidden lg:flex justify-between">
-          <ul class="menu menu-horizontal px-1">
+        <div class="navbar-center hidden lg:flex justify-evenly">
+          <ul class="menu menu-horizontal ">
             <li class="color-primary"><a>Home</a></li>
             <li>
               <a>About</a>
@@ -76,9 +76,48 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <p class="hidden lg:flex"><i class="fa-solid fa-magnifying-glass text-[#89898B] mr-4"></i></p>
-          <a class="btn bg-[#FF4240] text-[#FFFFFF] font-bold">Get Ticket</a>
+          <p class="hidden lg:flex">
+            <i class="fa-solid fa-magnifying-glass text-[#89898B] mr-4"></i>
+          </p>
+          <a class="btn bg-[#FF4240] text-[#FFFFFF] font-bold  ">Get Ticket</a>
         </div>
+      </div>
+
+      <!--! Banner Section Done  -->
+      <div class="mt-8 max-w-screen-lg px-2 md:px-4 lg:px-8 mx-auto">
+        <div class="carousel 200px lg:h-[400px]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img
+              src="Images/1.png"
+              class="w-full"
+            />
+            <div
+              class="absolute flex  transform justify-between lg:justify-normal lg:translate-y-32 left-5 right-5 top-1/2 gap-3"
+            >
+              <a href="#slide2" class="btn btn-circle  bg-[#131318] text-white border-none" >❮</a>
+              <a href="#slide2" class="btn btn-circle bg-[#131318] text-white border-none">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="Images/4.png"
+              class="w-full"
+            />
+            <div
+              class="absolute flex  transform justify-between lg:justify-normal lg:translate-y-32 left-5 right-5 top-1/2 gap-3"
+            >
+              <a href="#slide1" class="btn btn-circle bg-[#131318] text-white border-none">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-[#131318] text-white border-none">❯</a>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="bg-[#131318] lg:transform lg:translate-x-3/4 lg:absolute lg:left-56 lg:-bottom-12  lg:-translate-y-32 lg:w-[500px]   p-2   rounded-lg">
+          <h1 class="font-bold text-2xl text-left text-white">Meet all the heroes from the field</h1>
+          <p class="section-p text-left mt-2 text-[#FFFFFF99]">Welcome to our hockey haven, where the rink comes alive with the thunderous applause of fans and the resounding clash of sticks. </p>
+        </div>
+
       </div>
     </header>
   </body>
